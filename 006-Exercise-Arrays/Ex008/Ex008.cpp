@@ -1,6 +1,6 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 int main()
 {
@@ -9,7 +9,7 @@ int main()
 
     std::vector<int> array(n);
 
-    for (int& num : array)
+    for (int &num : array)
     {
         std::cin >> num;
     }
@@ -24,7 +24,7 @@ int main()
         }
     }
 
-    for (const int& num : top_integers)
+    for (const int &num : top_integers)
     {
         std::cout << num << " ";
     }

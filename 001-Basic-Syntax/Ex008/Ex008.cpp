@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 int main()
 {
@@ -18,8 +18,7 @@ int main()
             std::cout << "The number is: " << std::abs(number) << '\n';
             break;
         }
-    }
-    while (true);
+    } while (true);
 
     return 0;
 }

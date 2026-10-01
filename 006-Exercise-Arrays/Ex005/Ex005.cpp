@@ -8,14 +8,14 @@ int main()
 
     std::vector<int> array(n);
 
-    for (int& num : array)
+    for (int &num : array)
     {
         std::cin >> num;
     }
 
-    for (const int& num1 : array)
+    for (const int &num1 : array)
     {
-        for (const int& num2 : array)
+        for (const int &num2 : array)
         {
             std::cout << num1 * num2 << " ";
         }

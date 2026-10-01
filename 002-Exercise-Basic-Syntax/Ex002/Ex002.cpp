@@ -12,9 +12,12 @@ int main()
     else
     {
         int negative_count = 0;
-        if (num1 < 0) negative_count++;
-        if (num2 < 0) negative_count++;
-        if (num3 < 0) negative_count++;
+        if (num1 < 0)
+            negative_count++;
+        if (num2 < 0)
+            negative_count++;
+        if (num3 < 0)
+            negative_count++;
 
         if (negative_count % 2 == 0)
         {

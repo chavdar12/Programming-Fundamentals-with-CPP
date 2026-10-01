@@ -1,9 +1,9 @@
+#include <algorithm>
+#include <cctype>
 #include <iostream>
 #include <string>
-#include <cctype>
-#include <algorithm>
 
-bool is_valid_password(const std::string& password)
+bool is_valid_password(const std::string &password)
 {
     const int length = password.length();
     const int digit_count = std::count_if(password.begin(), password.end(), ::isdigit);

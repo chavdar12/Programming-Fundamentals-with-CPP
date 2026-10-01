@@ -1,14 +1,17 @@
 #include <iostream>
 #include <string>
 
-bool are_brackets_correct(const std::string& expression)
+bool are_brackets_correct(const std::string &expression)
 {
     int balance = 0;
     for (const char c : expression)
     {
-        if (c == '(') ++balance;
-        else if (c == ')') --balance;
-        if (balance < 0) return false;
+        if (c == '(')
+            ++balance;
+        else if (c == ')')
+            --balance;
+        if (balance < 0)
+            return false;
     }
     return balance == 0;
 }

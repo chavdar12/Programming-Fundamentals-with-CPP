@@ -11,7 +11,7 @@ char max(const char a, const char b)
     return (a > b) ? a : b;
 }
 
-std::string max(const std::string& a, const std::string& b)
+std::string max(const std::string &a, const std::string &b)
 {
     return (a > b) ? a : b;
 }

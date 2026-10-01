@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-std::string remove_repeated_chars(const std::string& str)
+std::string remove_repeated_chars(const std::string &str)
 {
     std::string result;
     std::unique_copy(str.begin(), str.end(), std::back_inserter(result),

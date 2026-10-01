@@ -1,8 +1,8 @@
 #include <iostream>
-#include <stack>
 #include <sstream>
+#include <stack>
 
-void read_track(std::stack<int>& track)
+void read_track(std::stack<int> &track)
 {
     std::string input;
     std::getline(std::cin, input);
@@ -14,7 +14,7 @@ void read_track(std::stack<int>& track)
     }
 }
 
-void mergeTracks(std::stack<int>& track_a, std::stack<int>& track_b, std::stack<int>& merge_track)
+void mergeTracks(std::stack<int> &track_a, std::stack<int> &track_b, std::stack<int> &merge_track)
 {
     while (!track_a.empty() || !track_b.empty())
     {
@@ -34,7 +34,7 @@ void mergeTracks(std::stack<int>& track_a, std::stack<int>& track_b, std::stack<
     std::cout << '\n';
 }
 
-void printMergeTrack(std::stack<int>& merge_track)
+void printMergeTrack(std::stack<int> &merge_track)
 {
     while (!merge_track.empty())
     {

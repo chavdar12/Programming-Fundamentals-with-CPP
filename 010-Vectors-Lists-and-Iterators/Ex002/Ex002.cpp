@@ -2,7 +2,7 @@
 #include <stack>
 #include <string>
 
-bool is_valid(const std::string& brackets)
+bool is_valid(const std::string &brackets)
 {
     std::stack<char> s;
     for (char bracket : brackets)
@@ -13,9 +13,9 @@ bool is_valid(const std::string& brackets)
         }
         else
         {
-            if (s.empty()) return false;
-            if ((bracket == ')' && s.top() != '(') ||
-                (bracket == ']' && s.top() != '[') ||
+            if (s.empty())
+                return false;
+            if ((bracket == ')' && s.top() != '(') || (bracket == ']' && s.top() != '[') ||
                 (bracket == '}' && s.top() != '{'))
             {
                 return false;

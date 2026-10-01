@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 double math_power(const double base, const int exponent)
 {

@@ -4,9 +4,8 @@
 std::string convert(const int num)
 {
     const std::string ones[] = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
-    const std::string teens[] = {
-        "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"
-    };
+    const std::string teens[] = {"ten",     "eleven",  "twelve",    "thirteen", "fourteen",
+                                 "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
     const std::string tens[] = {"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
 
     if (num < 10)

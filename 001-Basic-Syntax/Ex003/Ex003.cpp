@@ -1,12 +1,10 @@
-#include <iostream>
 #include <array>
+#include <iostream>
 
 int main()
 {
-    const std::array<std::string, 12> months = {
-        "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November",
-        "December"
-    };
+    const std::array<std::string, 12> months = {"January", "February", "March",     "April",   "May",      "June",
+                                                "July",    "August",   "September", "October", "November", "December"};
 
     int month_number;
     std::cin >> month_number;

@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string>
 
-std::string caesar_cipher(const std::string& text)
+std::string caesar_cipher(const std::string &text)
 {
     std::string result = text;
 
-    for (char& c : result)
+    for (char &c : result)
     {
         if (isalpha(c))
         {

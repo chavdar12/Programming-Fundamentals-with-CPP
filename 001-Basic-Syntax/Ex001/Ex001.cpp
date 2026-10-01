@@ -1,5 +1,5 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 #include <string>
 
 int main()
@@ -11,8 +11,8 @@ int main()
     getline(std::cin, name);
     std::cin >> age >> grade;
 
-    std::cout << "Name: " << name << ", Age: " << age << ", Grade: " << std::fixed << std::setprecision(2) << grade <<
-        '\n';
+    std::cout << "Name: " << name << ", Age: " << age << ", Grade: " << std::fixed << std::setprecision(2) << grade
+              << '\n';
 
     return 0;
 }

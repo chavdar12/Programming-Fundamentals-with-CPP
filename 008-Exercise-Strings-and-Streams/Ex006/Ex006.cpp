@@ -1,15 +1,14 @@
-#include <iostream>
-#include <cctype>
-#include <string>
 #include <algorithm>
+#include <cctype>
+#include <iostream>
+#include <string>
 
-std::string title_case(const std::string& text)
+std::string title_case(const std::string &text)
 {
     std::string result = text;
     bool new_word = true;
 
-    std::for_each(result.begin(), result.end(), [&](char& c)
-    {
+    std::for_each(result.begin(), result.end(), [&](char &c) {
         if (std::isalpha(c))
         {
             c = new_word ? std::toupper(c) : c;

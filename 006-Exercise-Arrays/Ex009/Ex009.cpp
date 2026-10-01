@@ -1,7 +1,7 @@
-#include <iostream>
-#include <vector>
-#include <set>
 #include <algorithm>
+#include <iostream>
+#include <set>
+#include <vector>
 
 int main()
 {
@@ -9,7 +9,7 @@ int main()
     std::cin >> n;
 
     std::vector<int> array(n);
-    for (int& num : array)
+    for (int &num : array)
     {
         std::cin >> num;
     }
@@ -29,7 +29,7 @@ int main()
         }
     }
 
-    for (const auto& pair : unique_pairs)
+    for (const auto &pair : unique_pairs)
     {
         std::cout << pair.first << " " << pair.second << '\n';
     }

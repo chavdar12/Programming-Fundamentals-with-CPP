@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-std::vector<int> calculate_lifetimes(const std::vector<int>& installation, const std::vector<int>& checkup)
+std::vector<int> calculate_lifetimes(const std::vector<int> &installation, const std::vector<int> &checkup)
 {
     std::vector<int> lifetimes;
     for (size_t i = 0; i < installation.size(); ++i)

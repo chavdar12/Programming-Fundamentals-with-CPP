@@ -1,6 +1,6 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 int main()
 {
@@ -9,7 +9,7 @@ int main()
 
     std::vector<int> array(n);
 
-    for (int& num : array)
+    for (int &num : array)
     {
         std::cin >> num;
     }
@@ -19,7 +19,7 @@ int main()
 
     std::rotate(array.begin(), array.begin() + rotations % n, array.end());
 
-    for (const int& num : array)
+    for (const int &num : array)
     {
         std::cout << num << " ";
     }

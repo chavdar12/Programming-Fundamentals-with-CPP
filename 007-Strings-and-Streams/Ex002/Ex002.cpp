@@ -16,7 +16,7 @@ int main()
         words.push_back(word);
     }
 
-    for (const std::string& w : words)
+    for (const std::string &w : words)
     {
         for (int i = 0; i < w.length(); ++i)
         {

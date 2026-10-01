@@ -1,8 +1,8 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 #include <map>
 
-void calculateTotalPrice(const std::string& product, const int quantity)
+void calculateTotalPrice(const std::string &product, const int quantity)
 {
     std::map<std::string, double> prices = {{"coffee", 1.50}, {"water", 1.00}, {"coke", 1.40}, {"snacks", 2.00}};
 

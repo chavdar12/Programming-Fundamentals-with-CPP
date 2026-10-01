@@ -1,8 +1,8 @@
 #include <iostream>
-#include <string>
-#include <sstream>
-#include <vector>
 #include <regex>
+#include <sstream>
+#include <string>
+#include <vector>
 
 int main()
 {
@@ -23,7 +23,7 @@ int main()
         }
     }
 
-    for (const std::string& valid_username : usernames)
+    for (const std::string &valid_username : usernames)
     {
         std::cout << valid_username << '\n';
     }

@@ -1,6 +1,6 @@
+#include <algorithm>
 #include <iostream>
 #include <string>
-#include <algorithm>
 #include <vector>
 
 int main()
@@ -13,7 +13,7 @@ int main()
         words.push_back(word);
     }
 
-    for (const std::string& w : words)
+    for (const std::string &w : words)
     {
         std::cout << w << " = " << std::string(w.rbegin(), w.rend()) << '\n';
     }
