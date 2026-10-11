@@ -1,19 +1,17 @@
 #include <cmath>
 #include <iostream>
 
-double math_power(const double base, const int exponent)
-{
-    return pow(base, exponent);
+double math_power(const double base, const int exponent) {
+  return pow(base, exponent);
 }
 
-int main()
-{
-    double base;
-    int exponent;
-    std::cin >> base >> exponent;
+int main() {
+  double base;
+  int exponent;
+  std::cin >> base >> exponent;
 
-    const double result = math_power(base, exponent);
-    std::cout << result;
+  const double result = math_power(base, exponent);
+  std::cout << result;
 
-    return 0;
+  return 0;
 }
