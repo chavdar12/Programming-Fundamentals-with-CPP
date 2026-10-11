@@ -2,7 +2,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int main()
+{
     std::string name;
     int age;
     float grade;
@@ -11,7 +12,7 @@ int main() {
     std::cin >> age >> grade;
 
     std::cout << "Name: " << name << ", Age: " << age << ", Grade: " << std::fixed << std::setprecision(2) << grade
-            << '\n';
+              << '\n';
 
     return 0;
 }

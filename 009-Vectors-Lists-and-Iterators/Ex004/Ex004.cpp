@@ -2,7 +2,8 @@
 #include <iostream>
 #include <vector>
 
-int main() {
+int main()
+{
     std::vector<int> first_sequence{std::istream_iterator<int>(std::cin), std::istream_iterator<int>()};
     std::vector<int> second_sequence{std::istream_iterator<int>(std::cin), std::istream_iterator<int>()};
 

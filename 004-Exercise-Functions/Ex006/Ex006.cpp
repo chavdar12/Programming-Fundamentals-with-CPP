@@ -2,7 +2,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int main()
+{
     std::string text;
     std::getline(std::cin, text);
 

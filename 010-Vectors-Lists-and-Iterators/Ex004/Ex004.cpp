@@ -3,7 +3,8 @@
 #include <string>
 #include <vector>
 
-int convert_to_minutes(const std::string &time) {
+int convert_to_minutes(const std::string &time)
+{
     int hours, minutes;
     std::istringstream ss(time);
     ss >> hours;
@@ -12,14 +13,17 @@ int convert_to_minutes(const std::string &time) {
     return hours * 60 + minutes;
 }
 
-int find_best_bus(const std::vector<std::string> &buses, const std::string &train_time) {
+int find_best_bus(const std::vector<std::string> &buses, const std::string &train_time)
+{
     const int train_departure = convert_to_minutes(train_time);
     int min_wait = INT_MAX;
     int best_bus_index = -1;
 
-    for (int i = 0; i < buses.size(); ++i) {
+    for (int i = 0; i < buses.size(); ++i)
+    {
         const int wait_time = convert_to_minutes(buses[i]) - train_departure;
-        if (wait_time >= 0 && wait_time < min_wait) {
+        if (wait_time >= 0 && wait_time < min_wait)
+        {
             min_wait = wait_time;
             best_bus_index = i + 1;
         }
@@ -28,13 +32,15 @@ int find_best_bus(const std::vector<std::string> &buses, const std::string &trai
     return best_bus_index;
 }
 
-int main() {
+int main()
+{
     int n;
     std::cin >> n;
     std::cin.ignore();
 
     std::vector<std::string> buses(n);
-    for (std::string &bus: buses) {
+    for (std::string &bus : buses)
+    {
         std::getline(std::cin, bus);
     }
 

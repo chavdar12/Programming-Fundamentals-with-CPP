@@ -3,12 +3,14 @@
 #include <iostream>
 #include <string>
 
-std::string title_case(const std::string &text) {
+std::string title_case(const std::string &text)
+{
     std::string result = text;
     bool new_word = true;
 
     std::for_each(result.begin(), result.end(), [&](char &c) {
-        if (std::isalpha(c)) {
+        if (std::isalpha(c))
+        {
             c = new_word ? std::toupper(c) : c;
             new_word = !std::isalpha(c);
         }
@@ -17,7 +19,8 @@ std::string title_case(const std::string &text) {
     return result;
 }
 
-int main() {
+int main()
+{
     std::string text;
     std::getline(std::cin, text);
 

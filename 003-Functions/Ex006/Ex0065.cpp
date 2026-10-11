@@ -1,11 +1,13 @@
 #include <cmath>
 #include <iostream>
 
-double math_power(const double base, const int exponent) {
+double math_power(const double base, const int exponent)
+{
     return pow(base, exponent);
 }
 
-int main() {
+int main()
+{
     double base;
     int exponent;
     std::cin >> base >> exponent;

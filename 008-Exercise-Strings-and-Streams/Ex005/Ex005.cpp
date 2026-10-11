@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
 
-bool are_brackets_correct(const std::string &expression) {
+bool are_brackets_correct(const std::string &expression)
+{
     int balance = 0;
-    for (const char c: expression) {
+    for (const char c : expression)
+    {
         if (c == '(')
             ++balance;
         else if (c == ')')
@@ -14,7 +16,8 @@ bool are_brackets_correct(const std::string &expression) {
     return balance == 0;
 }
 
-int main() {
+int main()
+{
     std::string expression;
     std::getline(std::cin, expression);
 
