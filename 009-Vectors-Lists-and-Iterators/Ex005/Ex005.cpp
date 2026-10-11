@@ -2,6 +2,7 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
+#include <iterator>
 
 int main() {
   std::vector<int> numbers;

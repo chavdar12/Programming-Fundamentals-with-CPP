@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
+#include <iterator>
 
 int main() {
   std::vector<int> first_sequence{std::istream_iterator<int>(std::cin),
