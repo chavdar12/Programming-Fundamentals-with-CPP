@@ -2,27 +2,24 @@
 #include <iostream>
 #include <vector>
 
-int main()
-{
-    int n;
-    std::cin >> n;
+int main() {
+  int n;
+  std::cin >> n;
 
-    std::vector<int> array(n);
+  std::vector<int> array(n);
 
-    for (int &num : array)
-    {
-        std::cin >> num;
-    }
+  for (int &num : array) {
+    std::cin >> num;
+  }
 
-    int rotations;
-    std::cin >> rotations;
+  int rotations;
+  std::cin >> rotations;
 
-    std::rotate(array.begin(), array.begin() + rotations % n, array.end());
+  std::rotate(array.begin(), array.begin() + rotations % n, array.end());
 
-    for (const int &num : array)
-    {
-        std::cout << num << " ";
-    }
+  for (const int &num : array) {
+    std::cout << num << " ";
+  }
 
-    return 0;
+  return 0;
 }
