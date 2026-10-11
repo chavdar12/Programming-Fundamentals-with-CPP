@@ -1,11 +1,14 @@
 #include <iostream>
 #include <string>
 
-std::string caesar_cipher(const std::string &text) {
+std::string caesar_cipher(const std::string &text)
+{
     std::string result = text;
 
-    for (char &c: result) {
-        if (isalpha(c)) {
+    for (char &c : result)
+    {
+        if (isalpha(c))
+        {
             c = (c - (isupper(c) ? 'A' : 'a') + 3) % 26 + (isupper(c) ? 'A' : 'a');
         }
     }
@@ -13,7 +16,8 @@ std::string caesar_cipher(const std::string &text) {
     return result;
 }
 
-int main() {
+int main()
+{
     std::string text;
     std::getline(std::cin, text);
 

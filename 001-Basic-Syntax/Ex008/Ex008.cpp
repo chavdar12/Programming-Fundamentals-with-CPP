@@ -1,15 +1,20 @@
 #include <cmath>
 #include <iostream>
 
-int main() {
+int main()
+{
     int number;
 
-    do {
+    do
+    {
         std::cin >> number;
 
-        if (number % 2 != 0) {
+        if (number % 2 != 0)
+        {
             std::cout << "Please write an even number." << '\n';
-        } else {
+        }
+        else
+        {
             std::cout << "The number is: " << std::abs(number) << '\n';
             break;
         }

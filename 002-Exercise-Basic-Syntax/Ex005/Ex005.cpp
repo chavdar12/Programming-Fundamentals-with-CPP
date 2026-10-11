@@ -1,21 +1,25 @@
 #include <iostream>
 #include <limits>
 
-int main() {
+int main()
+{
     int n;
     std::cin >> n;
 
     int min = std::numeric_limits<int>::max();
     int max = std::numeric_limits<int>::min();
 
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; ++i)
+    {
         int num;
         std::cin >> num;
 
-        if (num < min) {
+        if (num < min)
+        {
             min = num;
         }
-        if (num > max) {
+        if (num > max)
+        {
             max = num;
         }
     }

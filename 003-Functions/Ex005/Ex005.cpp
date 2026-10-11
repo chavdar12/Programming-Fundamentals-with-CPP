@@ -1,10 +1,12 @@
 #include <iostream>
 
-int calculate_rectangle_area(const int width, const int height) {
+int calculate_rectangle_area(const int width, const int height)
+{
     return width * height;
 }
 
-int main() {
+int main()
+{
     int width, height;
     std::cin >> width >> height;
 

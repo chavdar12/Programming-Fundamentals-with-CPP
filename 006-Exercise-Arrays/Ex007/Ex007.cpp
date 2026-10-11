@@ -2,13 +2,15 @@
 #include <iostream>
 #include <vector>
 
-int main() {
+int main()
+{
     int n;
     std::cin >> n;
 
     std::vector<int> array(n);
 
-    for (int &num: array) {
+    for (int &num : array)
+    {
         std::cin >> num;
     }
 
@@ -17,7 +19,8 @@ int main() {
 
     std::rotate(array.begin(), array.begin() + rotations % n, array.end());
 
-    for (const int &num: array) {
+    for (const int &num : array)
+    {
         std::cout << num << " ";
     }
 
