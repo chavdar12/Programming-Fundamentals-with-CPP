@@ -1,8 +1,8 @@
 #include <algorithm>
 #include <iostream>
+#include <iterator>
 #include <sstream>
 #include <vector>
-#include <iterator>
 
 int main() {
   std::vector<int> numbers;

@@ -1,8 +1,8 @@
+#include <climits>
 #include <iostream>
 #include <sstream>
 #include <string>
 #include <vector>
-#include <climits>
 
 int convert_to_minutes(const std::string &time) {
   int hours, minutes;
