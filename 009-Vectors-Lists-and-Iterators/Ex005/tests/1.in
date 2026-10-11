@@ -1,0 +1,6 @@
+1 2 3 4
+Add 5
+Remove 2
+Insert 9 1
+RemoveAt 0
+end
