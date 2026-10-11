@@ -3,18 +3,15 @@
 #include <string>
 #include <vector>
 
-int main()
-{
+int main() {
     std::vector<std::string> words;
     std::string word;
-    while (std::cin >> word && word != "end")
-    {
+    while (std::cin >> word && word != "end") {
         std::reverse(word.begin(), word.end());
         words.push_back(word);
     }
 
-    for (const std::string &w : words)
-    {
+    for (const std::string &w: words) {
         std::cout << w << " = " << std::string(w.rbegin(), w.rend()) << '\n';
     }
 

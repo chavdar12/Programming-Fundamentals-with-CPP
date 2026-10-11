@@ -4,8 +4,7 @@
 #include <string>
 #include <vector>
 
-int main()
-{
+int main() {
     std::string input;
     std::getline(std::cin, input);
 
@@ -15,16 +14,13 @@ int main()
     const std::regex pattern("^[a-zA-Z0-9_-]{3,16}$");
 
     std::string username;
-    while (std::getline(ss, username, ','))
-    {
-        if (std::regex_match(username, pattern))
-        {
+    while (std::getline(ss, username, ',')) {
+        if (std::regex_match(username, pattern)) {
             usernames.push_back(username);
         }
     }
 
-    for (const std::string &valid_username : usernames)
-    {
+    for (const std::string &valid_username: usernames) {
         std::cout << valid_username << '\n';
     }
 

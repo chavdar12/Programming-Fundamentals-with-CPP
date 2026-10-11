@@ -3,15 +3,13 @@
 #include <numeric>
 #include <vector>
 
-int main()
-{
+int main() {
     int n;
     std::cin >> n;
 
     std::vector<int> array(n);
 
-    for (int &num : array)
-    {
+    for (int &num: array) {
         std::cin >> num;
     }
 

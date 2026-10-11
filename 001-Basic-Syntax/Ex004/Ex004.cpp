@@ -1,21 +1,15 @@
 #include <iostream>
 #include <string>
 
-int main()
-{
+int main() {
     std::string country;
     std::cin >> country;
 
-    if (country == "England" || country == "USA")
-    {
+    if (country == "England" || country == "USA") {
         std::cout << "English";
-    }
-    else if (country == "Spain" || country == "Argentina" || country == "Mexico")
-    {
+    } else if (country == "Spain" || country == "Argentina" || country == "Mexico") {
         std::cout << "Spanish";
-    }
-    else
-    {
+    } else {
         std::cout << "unknown";
     }
 

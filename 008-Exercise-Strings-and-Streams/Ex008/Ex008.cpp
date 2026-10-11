@@ -2,8 +2,7 @@
 #include <sstream>
 #include <string>
 
-int main()
-{
+int main() {
     std::string line;
     std::getline(std::cin, line);
 
@@ -11,15 +10,11 @@ int main()
     int sum = 0, num;
     std::string word, non_numeric_words;
 
-    while (ss >> word)
-    {
+    while (ss >> word) {
         std::istringstream iss(word);
-        if (iss >> num)
-        {
+        if (iss >> num) {
             sum += num;
-        }
-        else
-        {
+        } else {
             non_numeric_words += word + " ";
         }
     }

@@ -2,8 +2,7 @@
 #include <iostream>
 #include <string>
 
-int character_multiplier(const std::string &str1, const std::string &str2)
-{
+int character_multiplier(const std::string &str1, const std::string &str2) {
     int sum = 0;
     auto pair = std::mismatch(str1.begin(), str1.end(), str2.begin(), str2.end());
 
@@ -14,8 +13,7 @@ int character_multiplier(const std::string &str1, const std::string &str2)
     return sum;
 }
 
-int main()
-{
+int main() {
     std::string str1, str2;
     std::cin >> str1 >> str2;
 

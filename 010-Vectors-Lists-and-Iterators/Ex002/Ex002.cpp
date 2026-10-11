@@ -2,22 +2,16 @@
 #include <stack>
 #include <string>
 
-bool is_valid(const std::string &brackets)
-{
+bool is_valid(const std::string &brackets) {
     std::stack<char> s;
-    for (char bracket : brackets)
-    {
-        if (bracket == '(' || bracket == '[' || bracket == '{')
-        {
+    for (char bracket: brackets) {
+        if (bracket == '(' || bracket == '[' || bracket == '{') {
             s.push(bracket);
-        }
-        else
-        {
+        } else {
             if (s.empty())
                 return false;
             if ((bracket == ')' && s.top() != '(') || (bracket == ']' && s.top() != '[') ||
-                (bracket == '}' && s.top() != '{'))
-            {
+                (bracket == '}' && s.top() != '{')) {
                 return false;
             }
             s.pop();
@@ -26,17 +20,13 @@ bool is_valid(const std::string &brackets)
     return s.empty();
 }
 
-int main()
-{
+int main() {
     std::string brackets;
     std::getline(std::cin, brackets);
 
-    if (is_valid(brackets))
-    {
+    if (is_valid(brackets)) {
         std::cout << "valid" << '\n';
-    }
-    else
-    {
+    } else {
         std::cout << "invalid" << '\n';
     }
 

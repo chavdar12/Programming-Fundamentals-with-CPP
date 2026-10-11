@@ -2,25 +2,18 @@
 #include <iostream>
 #include <string>
 
-int main()
-{
+int main() {
     std::string input;
     std::getline(std::cin, input);
 
     std::string digits, letters, others;
 
-    for (const char ch : input)
-    {
-        if (isdigit(ch))
-        {
+    for (const char ch: input) {
+        if (isdigit(ch)) {
             digits += ch;
-        }
-        else if (isalpha(ch))
-        {
+        } else if (isalpha(ch)) {
             letters += ch;
-        }
-        else
-        {
+        } else {
             others += ch;
         }
     }

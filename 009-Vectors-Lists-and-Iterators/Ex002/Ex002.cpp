@@ -3,15 +3,13 @@
 #include <string>
 #include <vector>
 
-int main()
-{
+int main() {
     int n;
     std::cin >> n;
     std::cin.ignore();
 
     std::vector<std::string> products;
-    for (int i = 0; i < n; ++i)
-    {
+    for (int i = 0; i < n; ++i) {
         std::string product;
         std::getline(std::cin, product);
         products.push_back(product);
@@ -19,8 +17,7 @@ int main()
 
     std::sort(products.begin(), products.end());
 
-    for (int i = 0; i < n; ++i)
-    {
+    for (int i = 0; i < n; ++i) {
         std::cout << i + 1 << "." << products[i] << '\n';
     }
 
