@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 
 double operation(const int a, const int b, const char op) {
   switch (op) {

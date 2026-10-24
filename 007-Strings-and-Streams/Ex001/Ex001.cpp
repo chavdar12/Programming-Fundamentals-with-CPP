@@ -7,7 +7,6 @@ int main() {
   std::vector<std::string> words;
   std::string word;
   while (std::cin >> word && word != "end") {
-    std::reverse(word.begin(), word.end());
     words.push_back(word);
   }
 

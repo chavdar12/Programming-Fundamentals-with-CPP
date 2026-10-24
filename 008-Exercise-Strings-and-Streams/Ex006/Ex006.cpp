@@ -8,10 +8,10 @@ std::string title_case(const std::string &text) {
   bool new_word = true;
 
   std::for_each(result.begin(), result.end(), [&](char &c) {
-    if (std::isalpha(c)) {
-      c = new_word ? std::toupper(c) : c;
-      new_word = !std::isalpha(c);
+    if (new_word && std::isalpha(c)) {
+      c = std::toupper(c);
     }
+    new_word = !std::isalpha(c);
   });
 
   return result;

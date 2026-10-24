@@ -15,8 +15,8 @@ int main() {
 
   std::sort(array.begin(), array.end());
 
-  const int min_diff =
-      *std::adjacent_difference(array.begin(), array.end(), array.begin());
+  std::adjacent_difference(array.begin(), array.end(), array.begin());
+  const int min_diff = *std::min_element(array.begin() + 1, array.end());
 
   std::cout << min_diff;
 

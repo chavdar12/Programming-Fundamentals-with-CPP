@@ -1,6 +1,7 @@
 #include <iomanip>
 #include <iostream>
 #include <map>
+#include <string>
 
 void calculateTotalPrice(const std::string &product, const int quantity) {
   std::map<std::string, double> prices = {

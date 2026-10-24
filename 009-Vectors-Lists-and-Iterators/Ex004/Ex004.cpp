@@ -1,12 +1,19 @@
 #include <algorithm>
 #include <iostream>
 #include <iterator>
+#include <sstream>
+#include <string>
 #include <vector>
 
 int main() {
-  std::vector<int> first_sequence{std::istream_iterator<int>(std::cin),
+  std::string line;
+  std::getline(std::cin, line);
+  std::istringstream first_line(line);
+  std::vector<int> first_sequence{std::istream_iterator<int>(first_line),
                                   std::istream_iterator<int>()};
-  std::vector<int> second_sequence{std::istream_iterator<int>(std::cin),
+  std::getline(std::cin, line);
+  std::istringstream second_line(line);
+  std::vector<int> second_sequence{std::istream_iterator<int>(second_line),
                                    std::istream_iterator<int>()};
 
   std::vector<int> merged_sequence;

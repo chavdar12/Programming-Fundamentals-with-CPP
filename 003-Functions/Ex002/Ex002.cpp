@@ -1,15 +1,18 @@
 #include <iostream>
 
 void print_grade(const double grade) {
-  if (grade >= 2.00 && grade <= 2.99) {
+  if (grade < 2.00 || grade > 6.00) {
+    return;
+  }
+  if (grade < 3.00) {
     std::cout << "Fail";
-  } else if (grade >= 3.00 && grade <= 3.49) {
+  } else if (grade < 3.50) {
     std::cout << "Poor";
-  } else if (grade >= 3.50 && grade <= 4.49) {
+  } else if (grade < 4.50) {
     std::cout << "Good";
-  } else if (grade >= 4.50 && grade <= 5.49) {
+  } else if (grade < 5.50) {
     std::cout << "Very good";
-  } else if (grade >= 5.50 && grade <= 6.00) {
+  } else {
     std::cout << "Excellent";
   }
 }

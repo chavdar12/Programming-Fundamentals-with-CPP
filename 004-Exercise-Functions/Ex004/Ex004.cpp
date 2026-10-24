@@ -10,6 +10,9 @@ std::string convert(const int num) {
   const std::string tens[] = {"",      "",      "twenty",  "thirty", "forty",
                               "fifty", "sixty", "seventy", "eighty", "ninety"};
 
+  if (num < 0) {
+    return "minus " + convert(-num);
+  }
   if (num < 10) {
     return ones[num];
   }
@@ -19,7 +22,11 @@ std::string convert(const int num) {
   if (num < 100) {
     return tens[num / 10] + (num % 10 != 0 ? " " + ones[num % 10] : "");
   }
-  return convert(num / 1000) +
+  if (num < 1000) {
+    return ones[num / 100] + " hundred" +
+           (num % 100 != 0 ? " " + convert(num % 100) : "");
+  }
+  return convert(num / 1000) + " thousand" +
          (num % 1000 != 0 ? " " + convert(num % 1000) : "");
 }
 

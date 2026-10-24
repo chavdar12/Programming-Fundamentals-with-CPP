@@ -7,7 +7,7 @@ int main() {
   std::getline(std::cin, second);
 
   size_t pos;
-  while ((pos = second.find(first)) != std::string::npos) {
+  while (!first.empty() && (pos = second.find(first)) != std::string::npos) {
     second.erase(pos, first.length());
   }
 

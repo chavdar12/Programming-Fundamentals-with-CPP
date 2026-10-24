@@ -16,7 +16,7 @@ void mergeTracks(std::stack<int> &track_a, std::stack<int> &track_b,
                  std::stack<int> &merge_track) {
   while (!track_a.empty() || !track_b.empty()) {
     if (track_b.empty() ||
-        (!track_a.empty() && track_a.top() < track_b.top())) {
+        (!track_a.empty() && track_a.top() > track_b.top())) {
       merge_track.push(track_a.top());
       track_a.pop();
       std::cout << "A";

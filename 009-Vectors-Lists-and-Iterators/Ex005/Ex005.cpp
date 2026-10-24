@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iterator>
 #include <sstream>
+#include <string>
 #include <vector>
 
 int main() {
@@ -24,10 +25,12 @@ int main() {
                     numbers.end());
     } else if (command == "RemoveAt") {
       std::cin >> index;
-      numbers.erase(numbers.begin() + index);
+      if (index >= 0 && index < static_cast<int>(numbers.size()))
+        numbers.erase(numbers.begin() + index);
     } else if (command == "Insert") {
       std::cin >> num >> index;
-      numbers.insert(numbers.begin() + index, num);
+      if (index >= 0 && index <= static_cast<int>(numbers.size()))
+        numbers.insert(numbers.begin() + index, num);
     }
   }
 

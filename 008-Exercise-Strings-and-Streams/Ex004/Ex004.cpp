@@ -1,15 +1,14 @@
-#include <algorithm>
 #include <iostream>
 #include <string>
 
 int character_multiplier(const std::string &str1, const std::string &str2) {
   int sum = 0;
-  auto pair = std::mismatch(str1.begin(), str1.end(), str2.begin(), str2.end());
+  const std::string &shorter = str1.size() < str2.size() ? str1 : str2;
+  const std::string &longer = str1.size() < str2.size() ? str2 : str1;
 
-  std::for_each(str1.begin(), pair.first,
-                [&](const char c1) { sum += c1 * *pair.second++; });
-  std::for_each(pair.first, str1.end(), [&](const char c) { sum += c; });
-  std::for_each(pair.second, str2.end(), [&](const char c) { sum += c; });
+  for (size_t i = 0; i < longer.size(); ++i) {
+    sum += i < shorter.size() ? shorter[i] * longer[i] : longer[i];
+  }
 
   return sum;
 }
